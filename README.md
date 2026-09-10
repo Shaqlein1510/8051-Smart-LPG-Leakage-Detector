@@ -41,16 +41,4 @@ The microcontroller compares the ADC value with predefined thresholds and activa
 | 101–180   | Low Leakage  | Yellow LED ON, buzzer OFF, fan OFF |
 | 181–255   | High Leakage | Red LED ON, buzzer ON, fan ON |
 
-##  System Architecture
 
-MQ-2 Gas Sensor
-       ↓
-    ADC0804
-       ↓
-  8051 / AT89C51
-       ↓
- ┌─────┼──────────────┐
- ↓     ↓      ↓       ↓
-LCD   LEDs   Buzzer  Relay
-                       ↓
-                  Exhaust Fan
